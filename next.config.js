@@ -6,4 +6,14 @@ const nextConfig = {
 //module.exports = nextConfig
 module.exports = {
   output: 'standalone',
+  images: {
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'openweathermap.org',
+        port: '',
+        pathname: '/img/wn/**',
+      },
+    ],
+  },
 }
