@@ -32,7 +32,7 @@ export default function Weather() {
             setErr(false);
             const options = {
                 method: 'GET',
-                url: 'http://api.openweathermap.org/data/2.5/weather?lat=' + lat_ls + '&lon=' + lon_ls + '&units=imperial&appid=' + process.env.NEXT_PUBLIC_OPEN_WEATHER_API_KEY,
+                url: 'https://api.openweathermap.org/data/2.5/weather?lat=' + lat_ls + '&lon=' + lon_ls + '&units=imperial&appid=' + process.env.NEXT_PUBLIC_OPEN_WEATHER_API_KEY,
             };
 
             axios
